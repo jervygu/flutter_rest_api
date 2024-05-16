@@ -40,7 +40,10 @@ class _HomeScreenState extends State<HomeScreen> {
             );
           }),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.amberAccent,
         onPressed: fetchUsers,
+        tooltip: 'Refresh',
+        child: const Icon(Icons.refresh),
       ),
     );
   }
